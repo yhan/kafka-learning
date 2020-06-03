@@ -85,3 +85,23 @@ my-app          first_topic     1          6               10              4    
 my-app          first_topic     2          10              14              4               -               -               -
 
 ```
+
+Parallelisation and Ordering  
+![ordering](images/ordering-parallel.png)
+
+Buffer size of Max block duration:  
+![max.block.ms](images/max-block-ms.png)
+
+Delivery semantics  
+1. At most once:  
+   ![at most once](images/at-most-once.png)
+
+1. At least once:
+   *The default semantic*    
+
+   ![at least once](images/at-least-once.png)
+1. Only once: *Kafka internal*
+
+Consumer heartbeat
+![consumer heartbeat](images/consumer-heartbeat.png)  
+![consumer heartbeat](images/consumer-poll.png)
